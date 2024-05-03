@@ -22,7 +22,6 @@
         wps {
             bindings = <&mo 4>;
             key-positions = <24 25>;
-            layers = <0>;
         };
     };
 
