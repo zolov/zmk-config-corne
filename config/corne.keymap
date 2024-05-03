@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     combos {
@@ -74,10 +75,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y    &kp U            &kp I      &kp O    &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F             &kp G        &kp H    &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N    &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                                &kp LEFT_ALT  &mt LEFT_GUI ESC  &kp SPACE    &kp RET  &lt 1 BACKSPACE  &lt 2 DEL
+&kp TAB           &kp Q    &kp W  &kp E         &kp R             &kp T        &kp Y    &kp U            &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &kp A    &kp S  &kp D         &kp F             &kp G        &kp H    &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &lt 4 Z  &kp X  &kp C         &kp V             &kp B        &kp N    &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                                  &kp LEFT_ALT  &mt LEFT_GUI ESC  &kp SPACE    &kp RET  &lt 1 BACKSPACE  &lt 2 DEL
             >;
         };
 
@@ -122,10 +123,10 @@
 
         workspaces {
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
-                                            &trans            &trans            &trans              &trans            &trans            &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)   &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &trans  &trans  &trans
+&trans  &trans            &mwh SCROLL_RIGHT  &mmv MOVE_UP      &mwh SCROLL_LEFT  &mwh SCROLL_DOWN    &trans            &trans            &trans            &trans  &trans  &trans
+&trans  &trans            &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &mwh SCROLL_UP      &trans            &trans            &trans            &trans  &trans  &trans
+                                             &trans            &mkp MB2          &mkp MB1            &trans            &trans            &trans
             >;
         };
     };
