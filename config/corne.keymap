@@ -83,8 +83,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp EXCL  &kp AT  &kp HASH      &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp ESCAPE
-&kp LEFT_SHIFT    &trans    &trans  &trans        &trans            &trans       &kp MINUS  &kp EQUAL  &kp PIPE   &kp LBKT  &kp RBKT  &kp GRAVE
+&kp TAB           &kp EXCL  &kp AT  &kp HASH      &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp GRAVE
+&kp LEFT_SHIFT    &trans    &trans  &trans        &trans            &trans       &kp MINUS  &kp EQUAL  &kp PIPE   &kp LBKT  &kp RBKT  &none
 &kp LEFT_CONTROL  &trans    &trans  &trans        &trans            &trans       &kp UNDER  &kp PLUS   &kp BSLH   &kp LBRC  &kp RBRC  &kp TILDE
                                     &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp RET    &trans     &mo 3
             >;
@@ -98,9 +98,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp N1  &kp N2  &kp N3        &kp N4            &kp N5       &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp ESCAPE
+&kp TAB           &kp N1  &kp N2  &kp N3        &kp N4            &kp N5       &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
 &kp LEFT_SHIFT    &trans  &trans  &trans        &trans            &trans       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LEFT_CONTROL  &trans  &trans  &trans        &trans            &trans       &trans    &trans    &trans  &trans     &trans  &kp DEL
+&kp LEFT_CONTROL  &trans  &trans  &trans        &trans            &trans       &trans    &trans    &trans  &trans     &trans  &none
                                   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp RET   &mo 3     &trans
             >;
         };
@@ -111,6 +111,15 @@
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7            &kp F8      &kp F9             &kp F10     &trans
 &trans  &trans        &bt BT_CLR    &trans        &trans        &new_macro_1    &trans          &trans            &trans      &trans             &trans      &trans
                                     &trans        &trans        &trans          &trans          &trans            &trans
+            >;
+        };
+
+        workspaces {
+            bindings = <
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
+                                            &trans            &trans            &trans              &trans            &trans            &trans
             >;
         };
     };
