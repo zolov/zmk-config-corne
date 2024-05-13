@@ -89,7 +89,7 @@
 
             bindings = <
 &kp TAB           &kp EXCL  &kp AT  &kp HASH      &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp GRAVE
-&kp LEFT_SHIFT    &trans    &trans  &kp LBKT      &kp LBRC          &kp LPAR     &kp MINUS  &kp EQUAL  &kp PIPE   &kp LBKT  &kp RBKT  &none
+&kp LEFT_SHIFT    &trans    &trans  &kp LBKT      &kp LBRC          &kp LPAR     &kp MINUS  &kp EQUAL  &kp PIPE   &kp LBKT  &kp RBKT  &kp DQT
 &kp LEFT_CONTROL  &trans    &trans  &trans        &trans            &trans       &kp UNDER  &kp PLUS   &kp BSLH   &kp LBRC  &kp RBRC  &kp TILDE
                                     &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp RET    &trans     &mo 3
             >;
