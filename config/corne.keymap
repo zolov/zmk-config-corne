@@ -121,9 +121,9 @@
 
         workspaces {
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans  &trans  &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
                                             &trans            &trans            &trans              &trans            &trans            &trans
             >;
         };
