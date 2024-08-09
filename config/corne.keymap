@@ -69,6 +69,13 @@
             bindings = <&kp Q &kp LS(K) &kp LS(D) &kp N4 &kp O &kp LS(T) &kp LS(W) &kp E &kp MINUS &kp QMARK &kp G &kp J &kp LS(Q) &kp V &kp I>;
             label = "NEW_MACRO_PCIDSS";
         };
+
+        new_macro_0908: new_macro_0908 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp E &kp LS(X) &kp V &kp LPAR &kp A &kp N7 &kp N0 &kp P &kp L &kp N6 &kp I &kp A &kp O &kp DOT &kp X &kp DQT>;
+            label = "NEW_MACRO_0908";
+        };
     };
 
     keymap {
@@ -132,7 +139,7 @@
             bindings = <
 &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
 &trans  &trans            &trans            &trans             &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
-&trans  &trans            &trans            &new_macro_pcidss  &new_macro_1605   &new_macro_1105     &trans            &trans            &trans            &trans      &trans      &trans
+&trans  &trans            &trans            &new_macro_pcidss  &new_macro_1605   &new_macro_0908     &trans            &trans            &trans            &trans      &trans      &trans
                                             &trans             &trans            &trans              &trans            &trans            &trans
             >;
         };
