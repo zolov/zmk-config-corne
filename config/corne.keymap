@@ -113,15 +113,22 @@
         new_macro_0908: new_macro_0908 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp E &kp LS(X) &kp V &kp LPAR &kp A &kp N7 &kp N0 &kp P &kp L &kp N6 &kp I &kp A &kp O &kp DOT &kp X &kp DQT>;
+            bindings = <&kp E &kp LS(X) &kp V &kp LPAR &kp A &kp N7 &kp N0 &kp P &kp L &kp N6 &kp I &kp A &kp O &kp DOT &kp X &kp DQT>;
             label = "NEW_MACRO_0908";
         };
 
         macro_0910: macro_0910 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp N6 &kp LS(U) &kp N &kp N6 &kp LS(H) &kp LS(B) &kp LS(K) &kp N5 &kp LS(Z) &kp S &kp K>;
+            bindings = <&kp STAR &kp N6 &kp LS(U) &kp N &kp N6 &kp LS(H) &kp LS(B) &kp LS(K) &kp N5 &kp LS(Z) &kp S &kp K>;
             label = "MACRO_0910";
+        };
+
+        v11_04_macro: v11_04_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(O) &kp RPAR &kp X &kp LS(L) &kp LS(X) &kp LS(U) &kp N1 &kp LS(F) &kp N2 &kp LS(E) &kp LBRC &kp LS(D) &kp LS(H) &kp N0 &kp V &kp LS(E)>;
+            label = "V11_04_MACRO";
         };
     };
 
@@ -184,10 +191,10 @@
 
         workspaces {
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
-&trans  &trans            &trans            &trans             &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
-&trans  &trans            &trans            &new_macro_pcidss  &new_macro_0908   &macro_0910         &trans            &trans            &trans            &trans      &trans      &trans
-                                            &trans             &trans            &trans              &trans            &trans            &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
+&trans  &trans            &trans            &trans            &trans            &v11_04_macro       &trans            &trans            &trans            &trans      &trans      &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
+                                            &trans            &trans            &trans              &trans            &trans            &trans
             >;
         };
     };
