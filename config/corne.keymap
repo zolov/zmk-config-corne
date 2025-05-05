@@ -127,8 +127,10 @@
         v11_04_macro: v11_04_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(O) &kp RPAR &kp X &kp LS(L) &kp LS(X) &kp LS(U) &kp N1 &kp LS(F) &kp N2 &kp LS(E) &kp LBRC &kp LS(D) &kp LS(H) &kp N0 &kp V &kp LS(E)>;
+            bindings = <&kp LS(O) &kp RPAR &kp X &kp LS(L) &kp LS(X) &kp LS(U) &kp N1 &kp LS(F) &kp N2 &kp LS(E) &kp RIGHT_BRACKET &kp LS(D) &kp LS(H) &kp N0 &kp V &kp LS(E)>;
             label = "V11_04_MACRO";
+            tap-ms = <9>;
+            wait-ms = <3>;
         };
     };
 
