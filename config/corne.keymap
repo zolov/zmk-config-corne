@@ -17,6 +17,46 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+        };
+
+        lbrc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <7 8>;
+        };
+
+        rbrc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <8 9>;
+        };
+
+        lbrkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <7 19>;
+        };
+
+        rbrkt {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <21 9>;
+        };
+
+        lt {
+            bindings = <&kp LT>;
+            key-positions = <31 32>;
+        };
+
+        gt {
+            bindings = <&kp GT>;
+            key-positions = <32 33>;
+        };
     };
 
     behaviors {
@@ -73,15 +113,31 @@
         new_macro_0908: new_macro_0908 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp E &kp LS(X) &kp V &kp LPAR &kp A &kp N7 &kp N0 &kp P &kp L &kp N6 &kp I &kp A &kp O &kp DOT &kp X &kp DQT>;
+            bindings = <&kp E &kp LS(X) &kp V &kp LPAR &kp A &kp N7 &kp N0 &kp P &kp L &kp N6 &kp I &kp A &kp O &kp DOT &kp X &kp DQT>;
             label = "NEW_MACRO_0908";
         };
 
         macro_0910: macro_0910 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp N6 &kp LS(U) &kp N &kp N6 &kp LS(H) &kp LS(B) &kp LS(K) &kp N5 &kp LS(Z) &kp S &kp K>;
+            bindings = <&kp STAR &kp N6 &kp LS(U) &kp N &kp N6 &kp LS(H) &kp LS(B) &kp LS(K) &kp N5 &kp LS(Z) &kp S &kp K>;
             label = "MACRO_0910";
+        };
+
+        v11_04_macro: v11_04_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(O) &kp RPAR &kp X &kp LS(L) &kp LS(X) &kp LS(U) &kp N1 &kp LS(F) &kp N2 &kp LS(E) &kp RIGHT_BRACKET &kp LS(D) &kp LS(H) &kp N0 &kp V &kp LS(E)>;
+            label = "V11_04_MACRO";
+            tap-ms = <9>;
+            wait-ms = <3>;
+        };
+
+        macro_260525: macro_260525 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp LS(N) &kp D &kp RBRC &kp W &kp U &kp W &kp W &kp LS(Z) &kp N6 &kp N6 &kp R &kp LS(W) &kp N7 &kp LS(Z) &kp EQUAL>;
+            label = "MACRO_260525";
         };
     };
 
@@ -96,10 +152,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q    &kp W  &kp E         &kp R         &kp T          &kp Y        &kp U          &kp I      &kp O    &kp P        &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &kp A    &kp S  &kp D         &kp F         &kp G          &kp H        &kp J          &kp K      &kp L    &kp SEMI     &kp SQT
-&kp LEFT_CONTROL  &lt 4 Z  &kp X  &kp C         &kp V         &kp B          &kp N        &kp M          &kp COMMA  &kp DOT  &lt 3 SLASH  &kp RBKT
-                                  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp ESC
+&kp TAB           &kp Q              &kp W                &kp E         &kp R         &kp T          &kp Y        &kp U          &kp I        &kp O                 &kp P                  &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LALT D   &hrm LCMD F   &kp G          &kp H        &hrm RCMD J    &hrm RALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
+&kp LEFT_CONTROL  &lt 4 Z            &kp X                &kp C         &kp V         &kp B          &kp N        &kp M          &kp COMMA    &kp DOT               &lt 3 SLASH            &kp RBKT
+                                                          &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -144,10 +200,10 @@
 
         workspaces {
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
-&trans  &trans            &trans            &trans             &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
-&trans  &trans            &trans            &new_macro_pcidss  &new_macro_0908   &macro_0910         &trans            &trans            &trans            &trans      &trans      &trans
-                                            &trans             &trans            &trans              &trans            &trans            &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
+&trans  &trans            &trans            &trans            &v11_04_macro     &macro_260525       &trans            &trans            &trans            &trans      &trans      &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
+                                            &trans            &trans            &trans              &trans            &trans            &trans
             >;
         };
     };
