@@ -139,6 +139,13 @@
             bindings = <&kp N0 &kp LS(N) &kp D &kp RBRC &kp W &kp U &kp W &kp W &kp LS(Z) &kp N6 &kp N6 &kp R &kp LS(W) &kp N7 &kp LS(Z) &kp EQUAL>;
             label = "MACRO_260525";
         };
+
+        macro_060825: macro_060825 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N) &kp N0 &kp LS(P) &kp LS(Y) &kp N2 &kp EXCL &kp LS(Z) &kp LS(V) &kp QMARK &kp Z &kp MINUS &kp N3 &kp N5 &kp LS(F) &kp POUND>;
+            label = "MACRO_060825";
+        };
     };
 
     keymap {
@@ -201,7 +208,7 @@
         workspaces {
             bindings = <
 &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)  &kp LC(N0)  &trans
-&trans  &trans            &trans            &trans            &v11_04_macro     &macro_260525       &trans            &trans            &trans            &trans      &trans      &trans
+&trans  &trans            &trans            &v11_04_macro     &macro_260525     &macro_060825       &trans            &trans            &trans            &trans      &trans      &trans
 &trans  &trans            &trans            &trans            &trans            &trans              &trans            &trans            &trans            &trans      &trans      &trans
                                             &trans            &trans            &trans              &trans            &trans            &trans
             >;
