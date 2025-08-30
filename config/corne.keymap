@@ -15,7 +15,7 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            bindings = <&gresc>;
         };
 
         lpar {
@@ -159,10 +159,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q              &kp W                &kp E         &kp R         &kp T          &kp Y        &kp U          &kp I        &kp O                 &kp P                  &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LALT D   &hrm LCMD F   &kp G          &kp H        &hrm RCMD J    &hrm RALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
-&kp LEFT_CONTROL  &lt 4 Z            &kp X                &kp C         &kp V         &kp B          &kp N        &kp M          &kp COMMA    &kp DOT               &lt 3 SLASH            &kp RBKT
-                                                          &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+&kp TAB           &kp Q              &kp W                &kp E         &kp R         &kp T          &kp Y        &kp U          &kp I                 &kp O                 &kp P                  &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LALT D   &hrm LCMD F   &kp G          &kp H        &hrm RCMD J    &hrm RALT K           &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
+&kp LEFT_CONTROL  &lt 4 Z            &kp X                &kp C         &kp V         &kp B          &kp N        &kp M          &kp COMMA             &kp DOT               &lt 3 SLASH            &kp RBKT
+                                                          &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp LS(LA(LC(LGUI)))
             >;
         };
 
@@ -189,19 +189,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans  &trans     &trans  &trans
+                                    &trans        &trans        &trans          &trans    &trans    &trans
             >;
         };
 
         extra_layer {
             bindings = <
 &kp K_PREV        &kp F1  &kp F2      &kp F3         &kp F4         &kp F5           &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp K_VOLUME_UP
-&kp C_PLAY_PAUSE  &none   &none       &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2    &none   &none   &none   &none   &none    &kp K_MUTE
-&kp C_NEXT        &none   &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2     &trans  &trans  &trans  &trans  &trans   &kp K_VOLUME_DOWN
-                                      &none          &bt BT_PRV     &bt BT_NXT       &none   &none   &none
+&kp C_PLAY_PAUSE  &trans  &trans      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2    &trans  &trans  &trans  &trans  &trans   &kp K_MUTE
+&kp C_NEXT        &trans  &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2     &trans  &trans  &trans  &trans  &trans   &kp K_VOLUME_DOWN
+                                      &trans         &bt BT_PRV     &bt BT_NXT       &trans  &trans  &trans
             >;
         };
 
