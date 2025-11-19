@@ -130,7 +130,7 @@
         new_macro_20_10_25: new_macro_20_10_25 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp G &kp D &kp V &kp F &kp POUND &kp S &kp H &kp LS(Y) &kp T &kp N7 &kp PRCNT &kp N9 &kp QMARK &kp LS(Z) &kp N8 &kp N9>;
+            bindings = <&kp G &kp D &kp V &kp F &kp POUND &kp S &kp H &kp LS(Y) &kp T &kp N7 &kp PRCNT &kp N9 &kp QMARK &kp LS(Z) &kp N8 &kp N9>;
             label = "NEW_MACRO_20_10_25";
         };
     };
