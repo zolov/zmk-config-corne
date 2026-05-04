@@ -37,6 +37,56 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <8 9>;
         };
+
+        n1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <1 13>;
+        };
+
+        n2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 14>;
+        };
+
+        n3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <3 15>;
+        };
+
+        n4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <4 16>;
+        };
+
+        n5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <5 17>;
+        };
+
+        n6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <6 18>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <7 19>;
+        };
+
+        n8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <8 20>;
+        };
+
+        n9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <9 21>;
+        };
+
+        n0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <10 22>;
+        };
     };
 
     behaviors {
