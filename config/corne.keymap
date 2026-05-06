@@ -37,6 +37,56 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <8 9>;
         };
+
+        n1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <1 13>;
+        };
+
+        n2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 14>;
+        };
+
+        n3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <3 15>;
+        };
+
+        n4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <4 16>;
+        };
+
+        n5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <5 17>;
+        };
+
+        n6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <6 18>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <7 19>;
+        };
+
+        n8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <8 20>;
+        };
+
+        n9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <9 21>;
+        };
+
+        n0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <10 22>;
+        };
     };
 
     behaviors {
@@ -140,6 +190,13 @@
             bindings = <&none &kp N5 &kp RPAR &kp LS(Z) &kp N8 &kp N7 &kp LS(L) &kp LS(W) &kp LS(S) &kp D &kp N1 &kp DQT &kp FSLH &kp S &kp LS(O) &kp J &kp LS(S)>;
             label = "NEW_MACRO_140126";
         };
+
+        macro_04052026: macro_04052026 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N4 &kp N5 &kp LS(Q) &kp LS(D) &kp N4 &kp Z &kp DLLR &kp K &kp N5 &kp LBKT &kp LBKT &kp F &kp N8 &kp W &kp U &kp L &kp LS(S) &kp QMARK>;
+            label = "MACRO_04052026";
+        };
     };
 
     keymap {
@@ -171,7 +228,7 @@
 &kp TILDE  &kp EXCL        &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp GRAVE
 &trans     &kp MINUS       &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR     &kp MINUS  &kp EQUAL  &kp PIPE   &kp LBKT  &kp RBKT  &kp DQT
 &trans     &kp UNDERSCORE  &kp PLUS   &kp RBKT  &kp RBRC  &kp RPAR     &kp UNDER  &kp PLUS   &kp BSLH   &kp LBRC  &kp RBRC  &trans
-                                      &trans    &trans    &trans       &trans     &trans     &none
+                                      &trans    &trans    &trans       &trans     &trans     &trans
             >;
         };
 
@@ -201,10 +258,10 @@
 
         workspaces {
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)     &kp LC(NUMBER_5)     &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)     &kp LC(N0)  &trans
-&trans  &trans            &trans            &macro_060825     &new_macro_20_10_25  &new_macro_140126    &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3   &trans      &trans
-&trans  &trans            &trans            &trans            &trans               &trans               &bt BT_DISC 0     &bt BT_DISC 1     &bt BT_DISC 2     &bt BT_DISC 3  &trans      &trans
-                                            &trans            &trans               &trans               &bt BT_NXT        &bt BT_PRV        &bt BT_CLR_ALL
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)   &kp LC(NUMBER_5)    &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(N9)     &kp LC(N0)  &trans
+&trans  &trans            &trans            &trans            &new_macro_140126  &macro_04052026     &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3   &trans      &trans
+&trans  &trans            &trans            &trans            &trans             &trans              &bt BT_DISC 0     &bt BT_DISC 1     &bt BT_DISC 2     &bt BT_DISC 3  &trans      &trans
+                                            &trans            &trans             &trans              &bt BT_NXT        &bt BT_PRV        &bt BT_CLR_ALL
             >;
         };
     };
